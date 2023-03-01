@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Burtons';
+  src: url('./assets/fonts/Burtons.otf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica-neu.ttf');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
