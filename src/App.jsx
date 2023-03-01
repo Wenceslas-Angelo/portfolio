@@ -1,9 +1,20 @@
-import React from "react";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+
+import './App.scss';
+
+import SideBar from './components/SideBar';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world! let build a portfolio</h1>
+      <SideBar />
+      <div className="page-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 }

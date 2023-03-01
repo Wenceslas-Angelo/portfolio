@@ -1,3 +1,19 @@
+:root {
+  --primary-bg: #252423;
+  --random-color: #2d2b2b;
+  --primary-color: #797878;
+  --color-tem: #cc6c06;
+  --second-primary-color: #000;
+  --anchor-color: #adabab;
+  --sideBar-bg: #222222;
+  --box-shadow: 0 0 15px 0px #0808084c;
+  --light-bg: #ddd;
+  --typical-color: rgb(0, 0, 0);
+  --theme-wrapper-bg: #252423;
+  --primary-text-color: #878787;
+  --hover-color: #fff;
+}
+
 @font-face {
   font-family: 'Burtons';
   src: url('./assets/fonts/Burtons.otf');
@@ -22,5 +38,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  background-color: var(--primary-bg);
+}
+
+a {
+  text-decoration: none;
 }
