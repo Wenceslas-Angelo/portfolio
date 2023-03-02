@@ -1,9 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import contact from '../../assets/images/contact.gif';
 import emailjs from '@emailjs/browser';
 import './index.scss';
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -43,16 +48,39 @@ function Contact() {
               <form ref={form} onSubmit={sendEmail}>
                 <ul>
                   <li className="half">
-                    <input type="text" required placeholder="Name" />
+                    <input
+                      type="text"
+                      required
+                      placeholder="Name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
                   </li>
                   <li className="half">
-                    <input type="email" required placeholder="Email" />
+                    <input
+                      type="email"
+                      required
+                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </li>
                   <li>
-                    <input type="text" required placeholder="Subject" />
+                    <input
+                      type="text"
+                      required
+                      placeholder="Subject"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
+                    />
                   </li>
                   <li>
-                    <textarea placeholder="Message" required></textarea>
+                    <textarea
+                      placeholder="Message"
+                      required
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    ></textarea>
                   </li>
                   <li>
                     <button type="submit" className="flat-btn">
