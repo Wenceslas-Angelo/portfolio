@@ -7,3 +7,41 @@
     margin: 0 0 0 60px;
   }
 }
+
+.flat-btn {
+  position: relative;
+  color: #cc6c06;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  font-family: 'Burtons';
+  margin-top: 25px;
+  padding: 10px 20px;
+  border: 1px solid #cc6c06;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+  transition: all 0.3s linear;
+  border-radius: 0 15px 0 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #cc6c06;
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition: all 0.3s linear;
+    border-radius: 0 15px 0 15px;
+  }
+
+  &:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  &:hover {
+    color: white;
+  }
+}
