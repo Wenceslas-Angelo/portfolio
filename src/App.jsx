@@ -28,3 +28,15 @@ function App() {
 }
 
 export default App;
+{
+  /* <div className="map-info">
+        <iframe
+          width="100%"
+          height="100%"
+          title="map"
+          className="map"
+          style={{ filter: 'opacity(0.7)' }}
+          src="https://www.google.com/maps/embed/v1/place?q=Toamasina,+Madagascar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        />
+      </div> */
+}
