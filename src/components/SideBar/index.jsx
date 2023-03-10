@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 function SideBar() {
   return (
     <div className="bg-black z-10 fixed bottom-0 w-full md:w-[50px] h-[50px] md:h-full ">
-      <nav className="absolute border md:top-[10%] w-full flex md:flex-col justify-around items-center md:h-[40%]">
+      <nav className="absolute w-full grid md:grid-rows-4 md:top-[10%] md:h-[40%]">
         {navLinks.map((navLink) => (
           <NavLink
             key={navLink.id}

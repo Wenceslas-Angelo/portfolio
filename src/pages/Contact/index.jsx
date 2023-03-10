@@ -28,6 +28,7 @@ function Contact() {
             <input
               type="text"
               placeholder="Name"
+              required
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="bg-transparent border md:w-[45%] w-full text-white border-gray-400 outline-none m-2 rounded-sm p-1 text-[20px] focus:border-indigo-600"
@@ -35,6 +36,7 @@ function Contact() {
             <input
               type="text"
               placeholder="Subject"
+              required
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               className="bg-transparent border md:w-[45%] w-full text-white border-gray-400 outline-none m-2 rounded-sm p-1 text-[20px] focus:border-indigo-600"
@@ -45,6 +47,7 @@ function Contact() {
             <input
               type="email"
               placeholder="Email"
+              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="bg-transparent border md:w-[92%] w-full text-white border-gray-400 outline-none m-2 rounded-sm p-1 text-[20px] focus:border-indigo-600"
@@ -54,6 +57,7 @@ function Contact() {
           <div>
             <textarea
               placeholder="Message"
+              required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className="bg-transparent border  h-[100px] md:w-[92%] w-full text-white border-gray-400 outline-none m-2 rounded-sm p-1 text-[20px] focus:border-indigo-600"
