@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import './App.scss';
-
 import SideBar from './components/SideBar';
 import Home from './pages/Home';
 // import About from './pages/About';
@@ -14,7 +12,7 @@ function App() {
   return (
     <div className="bg-[#181818]">
       <SideBar />
-      <div className="page-container">
+      <div className="min-h-[100vh] p-[20px] ml-0 md:ml-[80px] mb-[40px] md:mb-0">
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/About" element={<About />} />

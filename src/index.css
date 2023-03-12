@@ -21,3 +21,7 @@
   font-family: 'Aurore';
   src: url('./assets/fonts/LaBelleAurore.woff2');
 }
+
+h1 {
+  font-family: 'Coolvetica', sans-serif;
+}
