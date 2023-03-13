@@ -1,10 +1,10 @@
 import React from 'react';
-import construction from '../../assets/images/undraw_under_construction_-46-pa.svg';
+import { headingStyles } from '../../utils/styles';
 
 function Work() {
   return (
-    <div className="">
-      <img src={construction} alt="construction" />
+    <div>
+      <h1 className={headingStyles}>My projects</h1>
     </div>
   );
 }

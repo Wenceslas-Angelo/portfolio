@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import messagerie from '../../assets/images/new_message.svg';
+import { headingStyles } from '../../utils/styles';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -13,7 +14,7 @@ function Contact() {
 
   return (
     <div>
-      <h1 className="font-bold text-white text-6xl text-center">Contact</h1>
+      <h1 className={headingStyles}>Contact</h1>
 
       <div className="grid md:flex justify-center items-center mt-10 md:my-20">
         <img

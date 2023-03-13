@@ -15,8 +15,8 @@ function App() {
       <div className="min-h-[100vh] p-[20px] ml-0 md:ml-[80px] mb-[40px] md:mb-0">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Work" element={<Work />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/works" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
