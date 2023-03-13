@@ -19,14 +19,14 @@ const skillSet = [
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
   {
-    icon: <IoLogoJavascript color="#F0DB4F" className="skills-icon" />,
-    spanText: 'JAVASCRIPT',
-    url: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript',
-  },
-  {
     icon: <SiSass color="#cd6799" className="skills-icon" />,
     spanText: 'SASS',
     url: '',
+  },
+  {
+    icon: <IoLogoJavascript color="#F0DB4F" className="skills-icon" />,
+    spanText: 'JAVASCRIPT',
+    url: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript',
   },
   {
     icon: <FaGit color="#F1502F" className="skills-icon" />,
