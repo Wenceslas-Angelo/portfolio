@@ -15,7 +15,7 @@ function Contact() {
   return (
     <div>
       <h1 className={headingStyles}>Contact</h1>
-      <p className="text-[#ccd6f6] text-[20px] w-[50%] m-auto mt-5">
+      <p className="text-[#ccd6f6] text-[20px] w-[80%] text-center mx-auto mt-5">
         I am interested in freelance opportunities especially ambitious or large
         project. Howeverif you have other request or question, do not hesitate
         to contact me using below form either.

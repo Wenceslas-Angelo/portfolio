@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Skill from '.';
+import Project from '.';
 import { BrowserRouter } from 'react-router-dom';
 
-test('Skill component should be rendered', () => {
+test('Project component should be rendered', () => {
   render(
     <BrowserRouter>
-      <Skill />
+      <Project />
     </BrowserRouter>
   );
 });
