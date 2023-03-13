@@ -1,24 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import skillSet from '../../data/skills';
-import './index.scss';
 
 function About() {
   return (
-    <div className="about-page">
+    <div className="">
       <h1>About & Skills</h1>
 
-      <div className="skills-container">
+      <div className="">
         {skillSet.map((item, index) => (
           <div key={index + item}>
             <Link
               to={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="skill-container"
+              className=""
             >
               {item.icon}
-              <span className="skill__name">{item.spanText}</span>
+              <span className="">{item.spanText}</span>
             </Link>
           </div>
         ))}
