@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 
 function SideBar() {
   return (
-    <div className="bg-black fixed bottom-0 w-full h-[80px] z-10 md:top-0 md:w-[80px] md:h-full">
+    <div className="bg-[#0a192f] fixed bottom-0 w-full h-[80px] z-10 md:top-0 md:w-[80px] md:h-full">
       <nav className="w-full h-full grid grid-cols-4 md:grid-cols-1 md:h-[50%]">
         {navLinks.map((navLink) => (
           <NavLink
@@ -13,7 +13,7 @@ function SideBar() {
             to={navLink.to}
             className={({ isActive }) =>
               isActive
-                ? 'text-indigo-600 bg-[#181818] flex justify-center items-center'
+                ? 'text-[#64ffda] bg-[#181818] flex justify-center items-center'
                 : 'text-gray-400 transition hover:bg-[#181818] hover:text-indigo-600 flex justify-center items-center'
             }
             activeclassname="active"

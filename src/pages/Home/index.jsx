@@ -14,8 +14,8 @@ function Home() {
           Web Developer
         </h1>
 
-        <h2 className="text-indigo-600 text-[30px] font-semibold py-[20px] tracking-[3px]">
-          React junior developer
+        <h2 className="text-[#64ffda] text-[30px] font-semibold py-[20px] tracking-[2px]">
+          I am a front end developer with React JS technology
         </h2>
 
         <div className="my-[30px] ">
