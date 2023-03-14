@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import SideBar from './components/SideBar';
+import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
@@ -10,13 +10,13 @@ import Error from './pages/Error';
 
 function App() {
   return (
-    <div className="bg-[#181818]">
-      <SideBar />
-      <div className="min-h-[100vh] p-[20px] ml-0 md:ml-[80px] mb-[40px] md:mb-0">
+    <div className="bg-navy">
+      <Header />
+      <div className="min-h-[100vh] px-[20px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/works" element={<Work />} />
+          <Route path="/projects" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>

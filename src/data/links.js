@@ -13,8 +13,8 @@ const navLinks = [
     icon: <FaUser fontSize={30} />,
   },
   {
-    id: 'Works',
-    to: '/works',
+    id: 'Projects',
+    to: '/projects',
     icon: <FaEye fontSize={30} />,
   },
   {
