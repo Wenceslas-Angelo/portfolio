@@ -6,7 +6,7 @@ import navLinks from '../../data/links';
 function Header() {
   const [showNav, setShowNav] = useState(false);
   return (
-    <header className="bg-navy transition z-10 fixed w-full px-5 py-3 shadow-md shadow-gray-700 flex justify-between items-center">
+    <header className="bg-navy transition z-10 fixed top-0 w-full px-5 py-3 shadow-md shadow-gray-700 flex justify-between items-center">
       <div className="text-lightSlate font-bold text-[30px] font-[Aurore]">
         <Link to="/">Wenceslas A.</Link>
       </div>

@@ -7,12 +7,13 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="bg-navy">
       <Header />
-      <div className="min-h-[100vh] px-[20px]">
+      <div className="min-h-[100vh] pt-20 px-[20px] md:px-[50px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }
